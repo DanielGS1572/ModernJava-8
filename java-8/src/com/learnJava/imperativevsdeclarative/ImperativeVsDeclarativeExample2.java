@@ -3,8 +3,9 @@ package com.learnJava.imperativevsdeclarative;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.toList;
+//import static java.util.stream.Collectors.toList;
 
 public class ImperativeVsDeclarativeExample2 {
 
@@ -30,7 +31,7 @@ public class ImperativeVsDeclarativeExample2 {
 
         List<Integer> uniqueList1 = integerList.stream()
                 .distinct()
-                .collect(toList());
+                .collect(Collectors.toList());                  //Collect es para definir como es que se quiere generar el output, en este caso en una lista
         System.out.println("uniqueList1 : " + uniqueList1);
     }
 }

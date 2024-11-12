@@ -3,7 +3,7 @@ package com.learnJava.lambda;
 import java.util.Comparator;
 
 public class ComparatorLambda {
-
+//IMPORTANTE: ver que Comparator tiene una sola @FunctionalInterface y ademas tiene interfaces definidas como default
     public static int compareTwoIntegers(Comparator<Integer> comparator, int a, int b){
 
         return comparator.compare(a,b);
@@ -28,6 +28,7 @@ public class ComparatorLambda {
         /**
          * In JAVA 8
          */
+        //ver que se puede castear el tipo y aparte se puede inferir (2a linea)
         Comparator<Integer> comparatorLambda = (Integer  a,Integer b) -> a.compareTo(b);
         Comparator<Integer> comparatorLambda1 = (a,b) -> a.compareTo(b);
 

@@ -24,9 +24,12 @@ public class ImperativeVsDeclarativeExample1 {
          * what style of programming.
          * You let the system do the job for you and get the result.
          */
-        int sum1= IntStream.rangeClosed(0,100)
+
+        // Una de las ventajas de los streams es que es Thread Safe, si se quisiera hacer en paralelo de forma imperativa (ejemplo anterior)
+        // se tendrían que definir los Threads
+        int sum1= IntStream.rangeClosed(0,100)   //rangeClosed se refiere a que si tomará el ultimo valor del rango
                 //.parallel()
-                .map(Integer::new)
+                //.map(Integer::new)
                 .sum();
 
         System.out.println("sum1 : " + sum1);

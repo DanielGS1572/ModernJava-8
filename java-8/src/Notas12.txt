@@ -16,3 +16,10 @@ Caracteristica del porque se llama Bi, como confirmar este hecho
 
 
 
+Kata [C_PredicateExample]
+Cual es el signature de un Predicate
+Cuales son los metodos default de un Predicate
+
+
+Kata [D_PredicateStudentExample]
+Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents()

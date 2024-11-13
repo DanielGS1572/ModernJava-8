@@ -37,7 +37,7 @@ public class BiFunctionExample {
 
     public static void main(String[] args) {
 
-        System.out.println(biFunction.apply(StudentDataBase.getAllStudents(),PredicateStudentExample.p2));
+        System.out.println(biFunction.apply(StudentDataBase.getAllStudents(), D_PredicateStudentExample.p2));
 
         getLoginLocs.apply("locator","elementType");
 

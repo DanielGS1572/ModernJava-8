@@ -1,0 +1,18 @@
+Lambdas and Functional Interfaces
+com.learnJava.functionalInterfaces
+
+Kata [A_ConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10515332#overview
+Cual es la caracteristica de un Consumer
+Hacer un Consumer que imprima un valor en upper case
+
+Que es hacer consumer chaining?
+Cuales son Primary interfaces      -       Extensions
+
+Pendiente: definir katas para cada uno de los metodos
+
+
+Kata [B_BiConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10525390#overview
+Caracteristica del porque se llama Bi, como confirmar este hecho
+
+
+

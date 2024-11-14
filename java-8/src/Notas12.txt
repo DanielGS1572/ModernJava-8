@@ -1,3 +1,17 @@
+Kata1
+ImperativeVsDeclarativeExample1.java
+- Cual es una de las ventajas de los streams? y como se tendría que hacer para cuando se trabaje con forma declarativa
+- Hacer la suma acumulada del 0 al 100 de forma declarativa
+- Hacer la suma de forma imperativa
+
+Kata2
+ImperativeVsDeclarativeExample2.java
+De la siguiente lista remover los duplicados de forma declarativa e imperativa
+List<Integer> integerList =Arrays.asList(1,2,3,4,4,5,5,6,7,7,8,9,9);
+
+
+
+
 Lambdas and Functional Interfaces
 com.learnJava.functionalInterfaces
 

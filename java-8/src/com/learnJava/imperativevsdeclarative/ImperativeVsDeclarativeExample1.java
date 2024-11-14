@@ -7,26 +7,20 @@ public class ImperativeVsDeclarativeExample1 {
 
     public static void main(String[] args) {
 
-        // sum of integers for the range from 0 to 100
-        /**
-         * Imperative Style - how style of programming
-         */
+
+        // Imperative Style - how style of programming
+
         int sum=0;
         for(int i=0;i<=100;i++){
-                sum+=i; // shared mutable state and its sequential anf it will go step by step
-                    // and it will have issues if we try to run the code in multithreaded environment
+                sum+=i;
         }
         System.out.println("Sum is : "+sum);
 
 
-        /**
-         * Declarative style. (Functional programming uses the same style)
-         * what style of programming.
-         * You let the system do the job for you and get the result.
-         */
+        // Declarative
 
-        // Una de las ventajas de los streams es que es Thread Safe, si se quisiera hacer en paralelo de forma imperativa (ejemplo anterior)
-        // se tendrían que definir los Threads
+        // Una de las ventajas de los streams es que es Thread Safe en un ambiente multithread, si se quisiera hacer en paralelo de forma imperativa (ejemplo anterior)
+        // se tendrían que definir el metodo con synchronized
         int sum1= IntStream.rangeClosed(0,100)   //rangeClosed se refiere a que si tomará el ultimo valor del rango
                 //.parallel()
                 //.map(Integer::new)

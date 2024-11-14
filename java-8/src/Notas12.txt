@@ -48,8 +48,16 @@ Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
 
 Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
 
+Kata [F_BiPredicateExample]
+Hacer con biPredictate (forEach, como en E_]:
+- getGradeLevel()>=3
+- s.getGpa()>=3.9
+
+Kata [G_FunctionExample + H_FunctionExample1]
+Cuales son los dos metodos default (y el metodo abstracto de Function)?
 
 
 
 11/14
-9:05 -
+9:05 - 9:25
+2:19 - 2:42

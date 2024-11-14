@@ -7,8 +7,9 @@ import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 
-public class BiPredicateExample {
-
+public class F_BiPredicateExample {
+//Basicamente el biPredicate es un Predicate que recibe dos parametros
+    // ver que en E_ simplemente recibe student y de ahí saca los valores
     static BiPredicate<Integer,Double> biPredicate = (gradeLevel, gpa) ->  gradeLevel>=3 && gpa >=3.9 ;
 
     static Consumer<Student> consumer = (student) -> {

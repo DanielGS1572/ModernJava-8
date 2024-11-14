@@ -37,3 +37,19 @@ Cuales son los metodos default de un Predicate
 
 Kata [D_PredicateStudentExample]
 Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents()
+
+Kata [E_PredicateAndConsumerExample]
+----Definir (inicio)----
+Hacer dos Predicates:
+- getGradeLevel()>=3
+- s.getGpa()>=3.9
+Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
+----Definir (fin)----
+
+Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
+
+
+
+
+11/14
+9:05 -

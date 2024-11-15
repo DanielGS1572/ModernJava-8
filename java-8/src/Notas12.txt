@@ -53,11 +53,30 @@ Hacer con biPredictate (forEach, como en E_]:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 
-Kata [G_FunctionExample + H_FunctionExample1]
-Cuales son los dos metodos default (y el metodo abstracto de Function)?
+Kata [G_FunctionExample + I_FunctionStudentExample + H_FunctionExample1 (IGNORAR)]
+=> G_FunctionExample
+        Cuales son los dos metodos default (y el metodo abstracto de Function)?
+=> I_FunctionStudentExample
+        Hacer una lista de estudiantes y regresa un mapa con su nombre y GPA cuyo getGradeLevel()>=3
+        Distinción importante del tipo de retorno en Function
+
+Kata [J_BiFunctionExample]
+Cual es el unico metodo default que tiene BiFunction
+Hacer una lista de estudiantes y regresa un mapa con su nombre y GPA cuyo getGradeLevel()>=3 ... pero que el predicate se le pase como parametro
 
 
+Kata [K_UnaryOperatorExample + L_BinaryOperatorExample]
+K_UnaryOperatorExample
+De que extiende UnaryOperator?
+Característica de UnaryOperator
+
+L_BinaryOperatorExample
+Hacer una multiplicación de dos numeros
+De que extiende BinaryOperator y cual es la caracteristica de los genericos
+Cuales son los metodos estaticos
 
 11/14
 9:05 - 9:25
 2:19 - 2:42
+3:36 - 3:48
+5:09 - 5:34

@@ -9,8 +9,9 @@ import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Predicate;
 
-public class BiFunctionExample {
-
+public class J_BiFunctionExample {
+//Bifunction puede recibir dos parametros y retrona un valor (3er elemento)
+    //la unica función por defaulta es andThen
     private static Map<String, String> loginPageLocs = new HashMap<>();
 
 

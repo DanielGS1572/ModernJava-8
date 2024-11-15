@@ -1,7 +1,7 @@
 package com.learnJava.functionalInterfaces;
 
 import java.util.function.Predicate;
-
+//el metodo que ejecuta un predicate es .test()
 public class C_PredicateExample {
 //El predicate recibe un valor y regresa un boolean
     //una pregunta que puede surgir es porque usar un Predicate si es algo muy directo
@@ -30,6 +30,9 @@ public class C_PredicateExample {
     public static void predicateNegate(){
 //ver que negate se puede concatenar con and y or
         System.out.println("Result in predicateNegate : " + p1.and(p2).negate().test(4)); //equivalent to reversing the result
+        //TODO como se usaría is equal al ser un metodo estatico?
+        System.out.println("Predicate.isEqual");
+        //System.out.println(Predicate.isEqual(5).and(i->true));    //todo esto esta mal, es solo para mostrar alternativas de como usar
     }
 
 

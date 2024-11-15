@@ -20,7 +20,12 @@ public class B_BiConsumerExample {
         Consumer<String> stringConsumer = (name) -> System.out.println("name is  :" + name);
 
         List<Student> students = StudentDataBase.getAllStudents();
+        System.out.println("\nBiConsummer1\n");
+        students.forEach((s) -> stringConsumer.accept(s.getName()));
 
+        System.out.println("\nBiConsummer2\n");
+//Ver que el forEach acepta un Consumer
+//[duda] porque se tiene que poner el accept si ya lo esta haciendo en el lambda -- porque tiene que iterar sobre cada uno de los elementos de la lista
         students.forEach((s) -> studentBiConsumer.accept(s.getName(),s.getActivities()));   //Ver que como se esta haciendo la implementación del lambda ( s -> ) se tiene que usar accept
     }
 

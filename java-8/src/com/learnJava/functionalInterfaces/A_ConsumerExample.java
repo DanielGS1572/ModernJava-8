@@ -16,11 +16,13 @@ Se usan dos clases para los datos
 
 Primary interfaces      -       Extensions
 
-Consumer                -       BiConsumer
-=> Accept some input and do some operation over that input
+Consumer    => Accept some input and do some operation over that input (sin retornar nada -puede no llevar parentesis-)
+-       BiConsumer
 
-Predicate               -       BiPredicate
-Function                -       BiFunction, UnaryOperator, BinaryOperator
+Predicate   => Acepta un tipo de dato y regresa un booleano
+-       BiPredicate
+Function    => Acepta un parametro de un tipo y regresa otro tipo (puede ser el mismo tipo o diferente)
+-       BiFunction, UnaryOperator, BinaryOperator
 Supplier
 */
     static Consumer<Student>  c1= p -> System.out.println(p);

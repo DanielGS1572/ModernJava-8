@@ -9,20 +9,22 @@ ImperativeVsDeclarativeExample2.java
 De la siguiente lista remover los duplicados de forma declarativa e imperativa
 List<Integer> integerList =Arrays.asList(1,2,3,4,4,5,5,6,7,7,8,9,9);
 
-
-
-
+###################################################################
 Lambdas and Functional Interfaces
 com.learnJava.functionalInterfaces
+###################################################################
 
-Kata [A_ConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10515332#overview
+Kata3 [A_ConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10515332#overview
 Cual es la caracteristica de un Consumer
 Hacer un Consumer que imprima un valor en upper case
 
+=> Hacer que con un forEach imprimar la lista de los estudiantes (dado que ya se tiene implementado en toString de cada estudiante -> StudentDataBase.getAllStudents()
+=> Hacer que se ejecute primer un consumer para imprimir el nombre en mayusculas y después que imprima las actividades
+=> Hacer un filtrado que unicamente despliegue los alumnos con gradeLevel = 4 y gpa = 3.9 (solamente usando consumer)
 Que es hacer consumer chaining?
-Cuales son Primary interfaces      -       Extensions
+Cuales son Primary interfaces      y sus correspondientes      Extensions
 
-Pendiente: definir katas para cada uno de los metodos
+
 
 
 Kata [B_BiConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10525390#overview

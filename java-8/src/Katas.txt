@@ -27,14 +27,18 @@ Cuales son Primary interfaces      y sus correspondientes      Extensions
 
 
 
-Kata [B_BiConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10525390#overview
+Kata4 [B_BiConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10525390#overview
+Cual es el metodo que ejecuta un BiConsumer
 Caracteristica del porque se llama Bi, como confirmar este hecho
+Hacer un Biconsumer que imprima el nombre y las actividades de estudiantes
+Concatenar operaciones que muestren en consola los resultados de sumar dividir y mulitplicar
 
 
 
-Kata [C_PredicateExample]
+Kata5 [C_PredicateExample]
+Cual es el metodo que ejecuta un predicate
 Cual es el signature de un Predicate
-Cuales son los metodos default de un Predicate
+Cuales son los metodos default de un Predicate (3)... usar cada uno de ellos
 
 
 Kata [D_PredicateStudentExample]
@@ -77,8 +81,15 @@ Hacer una multiplicación de dos numeros
 De que extiende BinaryOperator y cual es la caracteristica de los genericos
 Cuales son los metodos estaticos
 
-11/14
+11/14 [Udemy]
 9:05 - 9:25
 2:19 - 2:42
 3:36 - 3:48
 5:09 - 5:34
+
+11/15 [Katas]
+Kata4
+Kata5
+Kata6
+9:07 - 9:28
+11:13 - 11:40

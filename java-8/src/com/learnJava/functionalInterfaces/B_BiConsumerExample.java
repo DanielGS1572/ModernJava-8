@@ -24,7 +24,7 @@ public class B_BiConsumerExample {
         students.forEach((s) -> stringConsumer.accept(s.getName()));
 
         System.out.println("\nBiConsummer2\n");
-//Ver que el forEach acepta un Consumer
+//Ver que el forEach acepta un Consumer y no un BiConsumer
 //[duda] porque se tiene que poner el accept si ya lo esta haciendo en el lambda -- porque tiene que iterar sobre cada uno de los elementos de la lista
         students.forEach((s) -> studentBiConsumer.accept(s.getName(),s.getActivities()));   //Ver que como se esta haciendo la implementación del lambda ( s -> ) se tiene que usar accept
     }
@@ -37,6 +37,12 @@ public class B_BiConsumerExample {
             System.out.println(" a : "  +  a + " b : " + b );
         };
         biConsumer.accept("java7" , "java8");
+
+        /*
+        La siguiente instruccción esta mal porque no acepta primitivos, tienen que ser objetos
+        static BiConsumer<int,int> suma = (n1,n2)-> System.out.println(n1+n2);                  //Incorrecto
+        static BiConsumer<Integer,Integer> suma = (n1,n2)-> System.out.println(n1+n2);          //Correcto
+        */
 
         BiConsumer<Integer, Integer> multiply = (a,b) -> {
             System.out.println("Multiplication : " + (a * b));

@@ -22,7 +22,8 @@ Hacer un Consumer que imprima un valor en upper case
 => Hacer que se ejecute primer un consumer para imprimir el nombre en mayusculas y después que imprima las actividades
 => Hacer un filtrado que unicamente despliegue los alumnos con gradeLevel = 4 y gpa = 3.9 (solamente usando consumer)
 Que es hacer consumer chaining?
-Cuales son Primary interfaces      y sus correspondientes      Extensions
+Que es una interfaz funcional y da 4 ejemplos (+ su firma)
+Cuales son Primary interfaces      y sus correspondientes      Extensions (hay 3 para uno de esos ejemplos)
 
 
 
@@ -30,8 +31,13 @@ Cuales son Primary interfaces      y sus correspondientes      Extensions
 Kata4 [B_BiConsumerExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10525390#overview
 Cual es el metodo que ejecuta un BiConsumer
 Caracteristica del porque se llama Bi, como confirmar este hecho
-Hacer un Biconsumer que imprima el nombre y las actividades de estudiantes
+Hacer un Biconsumer que imprima el nombre y las actividades de estudiantes (a pesar que este ejercicio es repetido con la kata anterior, hacerlo de todas formas con un biconsumer)
 Concatenar operaciones que muestren en consola los resultados de sumar dividir y mulitplicar
+
+Que esta mal de la siguiente instrucción:
+static BiConsumer<int,int> suma = (n1,n2)-> System.out.println(n1+n2);
+
+Dos metodos de Consumer y BiConsumer (ver implementaciones del JDK si es necesario)
 
 
 

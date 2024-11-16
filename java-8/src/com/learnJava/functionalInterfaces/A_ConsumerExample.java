@@ -23,7 +23,7 @@ Predicate   => Acepta un tipo de dato y regresa un booleano
 -       BiPredicate
 Function    => Acepta un parametro de un tipo y regresa otro tipo (puede ser el mismo tipo o diferente)
 -       BiFunction, UnaryOperator, BinaryOperator
-Supplier
+Supplier.- Supplier<T> es una interfaz funcional que no acepta parámetros y devuelve un resultado de tipo T.
 */
     static Consumer<Student>  c1= p -> System.out.println(p);
 

@@ -41,8 +41,8 @@ Cual es el signature de un Predicate
 Cuales son los metodos default de un Predicate (3)... usar cada uno de ellos
 
 
-Kata [D_PredicateStudentExample]
-Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents()
+Kata6 [D_PredicateStudentExample ignorar -> Function<Integer,Predicate<Integer>>]
+Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)
 
 Kata [E_PredicateAndConsumerExample]
 ----Definir (inicio)----
@@ -59,7 +59,7 @@ Hacer con biPredictate (forEach, como en E_]:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 
-Kata [G_FunctionExample + I_FunctionStudentExample + H_FunctionExample1 (IGNORAR)]
+Kata [G_FunctionExample + I_FunctionStudentExample + H_FunctionExample1 (IGNORAR) + D_PredicateStudentExample (Function<Integer,Predicate<Integer>>)]
 => G_FunctionExample
         Cuales son los dos metodos default (y el metodo abstracto de Function)?
 => I_FunctionStudentExample
@@ -93,3 +93,4 @@ Kata5
 Kata6
 9:07 - 9:28
 11:13 - 11:40
+9:10 - 9:22

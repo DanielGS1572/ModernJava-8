@@ -38,6 +38,7 @@ public class D_PredicateStudentExample {
         }));
 //filter with Predicate (menos verboso)
 //ver que filter tiene sentido que reciba un predicate para decir si va o no va
+        //pero
         studentList.stream()
                 .filter(p1)
                 .collect(Collectors.toList());

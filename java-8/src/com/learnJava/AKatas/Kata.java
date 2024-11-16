@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Kata {
-    static Predicate<Integer> mod2 = i -> i%2 == 0;
-    static Predicate<Integer> mod5 = i -> i%5 == 0;
+
     public static void main(String[] args){
-        System.out.println(mod2.and(mod5).test(4));
-        System.out.println(mod5.negate().and(mod2).test(4));
+
+
+
     }
 
 }

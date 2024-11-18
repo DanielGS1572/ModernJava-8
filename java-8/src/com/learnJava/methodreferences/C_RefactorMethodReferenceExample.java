@@ -2,19 +2,18 @@ package com.learnJava.methodreferences;
 
 import com.learnJava.data.Student;
 import com.learnJava.data.StudentDataBase;
-import com.learnJava.functionalInterfaces.SupplierExample;
 
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-public class RefactorMethodReferenceExample {
+public class C_RefactorMethodReferenceExample {
 
     static Predicate<Student> predicateUsingLambda = (s) -> s.getGradeLevel()>=3;
+//Ver que se esta haciendo llamado del tipo Class::staticMethod
+    static Predicate<Student> predicateUsingMetRef = C_RefactorMethodReferenceExample::greaterThan;
 
-    static Predicate<Student> predicateUsingMetRef = RefactorMethodReferenceExample::greaterThan;
 
-
-    static BiPredicate<Student,Integer> predicateUsingMethodReference = RefactorMethodReferenceExample::greaterThan;
+    static BiPredicate<Student,Integer> predicateUsingMethodReference = C_RefactorMethodReferenceExample::greaterThan;
 
     static public  boolean greaterThan(Student student){
 

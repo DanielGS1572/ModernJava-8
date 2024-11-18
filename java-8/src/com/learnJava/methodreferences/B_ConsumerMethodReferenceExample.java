@@ -5,12 +5,14 @@ import com.learnJava.data.StudentDataBase;
 
 import java.util.function.Consumer;
 
-public class ConsumerMethodReferenceExample {
+public class B_ConsumerMethodReferenceExample {
 
     /**
      * Class::instancemethod
+     System.err es de la clase System que a su vez tiene una propiedad estatica del tipo PrintStream
+     Es por eso que se maneja como Class::instancemethod
      */
-    static Consumer<Student>  c1= System.out::println;
+    static Consumer<Student>  c1= System.err::println;
 
 
     /**

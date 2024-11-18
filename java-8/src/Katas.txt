@@ -44,11 +44,13 @@ Dos metodos de Consumer y BiConsumer (ver implementaciones del JDK si es necesar
 Kata5 [C_PredicateExample]
 Cual es el metodo que ejecuta un predicate
 Cual es el signature de un Predicate
-Cuales son los metodos default de un Predicate (3)... usar cada uno de ellos
+Hacer el ejercicio con s.getGpa() >= 4 y s.getNoteBooks() >= 15
+Cuales son los metodos default de un Predicate (3 como minimo)... usar cada uno de ellos
 
 
 Kata6 [D_PredicateStudentExample ignorar -> Function<Integer,Predicate<Integer>>]
-Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)
+Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)  [Imprimir el objeto de la lista]
+Revisar la duda de como funciona Function
 
 Kata [E_PredicateAndConsumerExample]
 ----Definir (inicio)----

@@ -13,17 +13,15 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Kata {
-    static Predicate<Student> gpa4 = s -> s.getGpa() >= 4;
-    static Predicate<Student> notebookes15 = s -> s.getNoteBooks() >= 15;
-
-    public static void main(String[] args){
-        List<Student> studentList = StudentDataBase.getAllStudents();
-        /*studentList.forEach(student -> {
-            if(gpa4.or(notebookes15).test(student)){
-                System.out.println(student.getName());
+    static Predicate<Student> p1 = s -> s.getGpa()>=3.9;
+    public static void main(String args[]){
+        StudentDataBase.getAllStudents().forEach(s -> {
+            if(p1.test(s)){
+                System.out.println(s.getName());
             }
-        });*/
-        System.out.println(studentList.stream().filter(gpa4.and(notebookes15)).collect(Collectors.toList()));
+        });
+
+        System.out.println(StudentDataBase.getAllStudents().stream().filter(p1).collect(Collectors.toList()));;
     }
 
 }

@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class SupplierExample {
-
+public class M_SupplierExample {
+// No recibe nada, pero regresa un valor
     public static  Supplier<Student> studentSupplier = () -> {
       return  new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"));
     };

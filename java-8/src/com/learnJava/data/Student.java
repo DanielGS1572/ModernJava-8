@@ -21,8 +21,11 @@ public class Student {
     }
 
     public Student(){
-
+        System.out.println("hello world");
     }
+
+
+
 
     public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities) {
         this.name = name;

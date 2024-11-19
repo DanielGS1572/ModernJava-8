@@ -42,14 +42,14 @@ Dos metodos de Consumer y BiConsumer (ver implementaciones del JDK si es necesar
 
 
 Kata5 [C_PredicateExample]
-Cual es el metodo que ejecuta un predicate
 Cual es el signature de un Predicate
+Cual es el metodo que ejecuta un predicate
 Hacer el ejercicio con s.getGpa() >= 4 y s.getNoteBooks() >= 15
 Cuales son los metodos default de un Predicate (3 como minimo)... usar cada uno de ellos
 
 
 Kata6 [D_PredicateStudentExample ignorar -> Function<Integer,Predicate<Integer>>]
-Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)  [Imprimir el objeto de la lista]
+Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)  [Imprimir el objeto de la lista con filter y el nombre del estudiante en el forEach]
 Revisar la duda de como funciona Function
 
 Kata [E_PredicateAndConsumerExample]
@@ -88,6 +88,56 @@ L_BinaryOperatorExample
 Hacer una multiplicación de dos numeros
 De que extiende BinaryOperator y cual es la caracteristica de los genericos
 Cuales son los metodos estaticos
+
+
+Kata [M_SupplierExample]
+Cual es la firma de Supplier
+usar e imprimir en consola, usar tambien SudentDatabase (hacer 2 suppliers)
+new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"))
+
+###################################################################
+Method Reference -> [Section 9] -> https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10654424#overview
+com.learnJava.methodreferences
+###################################################################
+Kata [A_FunctionMethodReferenceExample]
+- Hace dos Function, uno con lambda y otro con Method Reference que recibe un String y regresa el uppercase
+- Imprimir en consola (usando ambos)
+- Hacer el ejercicio de convertir un lambda a method reference
+
+
+Kata [B_ConsumerMethodReferenceExample]
+Fuente: https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10667460#overview
+- Hacer un Consumer con Method Reference que imprima los objetos (implementacion del toString) => StudentDataBase.getAllStudents()
+- Hacer dos Consumers que imprima printListOfActivities
+* Usando lambda
+* Usando method reference
+
+
+Kata [C_RefactorMethodReferenceExample]
+... al final de esta kata se deben tener 3 sout's
+- Hacer una combinación de Predicate y Supplier en la que se imprima si la condición s.getGradeLevel()>=3 es verdadera o falsa
+Crear el supplier con la siguiente información:
+new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"))
+
+- Hacer uso de MethodReference del caso anterior
+- Hacer uso de MethodReference pero con BiPredicate
+
+Kata [D_SupplierMethodReferenceExample]
+Que estaría mal al usar Constructor Reference? y cual es el requerimiento para poder usar?
+Mandar llamar el constructor de Student para que mande llamar Hello World
+
+Usar constructor reference con el constructor que setea el nombre del Student
+
+
+
+
+
+
+
+
+
+
+
 
 11/14 [Udemy]
 9:05 - 9:25

@@ -152,3 +152,10 @@ Kata6
 9:07 - 9:28
 11:13 - 11:40
 9:10 - 9:22
+
+
+11/19 [Katas]
+Kata1.- se me olvido el metodo para la generación de numeros (.rangeClosed)
+Kata2.- ok
+Kata3.- Se me olvido los subtipos
+8:53 - 914

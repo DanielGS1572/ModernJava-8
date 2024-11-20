@@ -129,8 +129,33 @@ Mandar llamar el constructor de Student para que mande llamar Hello World
 Usar constructor reference con el constructor que setea el nombre del Student
 
 
+###################################################################
+Lambdas and local variables -> [Section 10] ->
+https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10670742#overview
+com.learnJava.lambda
+###################################################################
+Kata [A_LambdaVariable1 + B_LambdaVariable2]
+- Dos restricciones de variables
+- Que es effectively final? y porque se hace esto de manejarse como final (2 razones)?
 
+###################################################################
+Collections -> [Section 11] ->
+https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10735934#overview
+com.learnJava.streams
+###################################################################
 
+Kata [A_StreamsExample + A1_CollectionsvsStreams]
+Usando streams
+CASO1
+De la lista getAllStudents().stream() meter los nombres y la lista de actividades en un Map cuyo getGradeLevel()>=3 y student.getGpa()>=3.9; [No usar if]
+Hacer lo anterior de forma paralela
+
+[Sección] TODO - Teoria
+Cuales son las 5 diferencias entre collections y Streams
+
+Caso3
+Como depurar un stream y que acepta?
+Cual es la principal idea de usar lo anterior
 
 
 

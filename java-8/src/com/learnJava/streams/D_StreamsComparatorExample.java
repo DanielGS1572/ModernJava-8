@@ -8,12 +8,13 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public class StreamsComparatorExample {
+public class D_StreamsComparatorExample {
 
     public static List<Student> sortStudentsByName(){
 
        return  StudentDataBase.getAllStudents().stream()
-                .sorted(Comparator.comparing(Student::getName))
+                .sorted(Comparator.comparing(Student::getName))     //para ordenar por nombre
+               //supongo que si no se le pasa el comparator se ordena por la primer propiedad (en este caso por el nombre)
                 .collect(toList());
     }
 

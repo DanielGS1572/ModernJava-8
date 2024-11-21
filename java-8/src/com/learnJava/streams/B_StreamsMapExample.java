@@ -12,14 +12,19 @@ import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 
-public class StreamsMapExample {
-
+public class B_StreamsMapExample {
+/*
+map se usa para convertir/transformar de un tipo a otro
+la conversión como tal en [A] es de student a string
+y en [B] de String a String haciendo un uppercase
+*/
 
     private static List<String> namesUpperCase(List<Student> names){
         List<String> namesUpperCase = names.stream() //Stream<Student>
-                .map(Student::getName) //Stream<String>
-                .map(String::toUpperCase) // Stream<String> -> UpperCase
-                .collect(toList()); // returns List // terminal operation
+                .map(Student::getName) //Stream<String>    ->   Student                     [A]
+                //el output anterior es un String por lo que el siguiente es un String
+                .map(String::toUpperCase) // Stream<String> ->  UpperCase                   [B]
+                .collect(toList()); // toList() -> Metodo estatico // terminal operation
         return namesUpperCase;
     }
 

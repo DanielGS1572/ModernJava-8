@@ -158,9 +158,39 @@ Como depurar un stream y que acepta?
 Cual es la principal idea de usar lo anterior
 
 
+Kata [B_StreamsMapExample]
+para que se usa map? (No confundir con Map)
+1) Hacer un metodo que regrese un List<String> y que regrese cada elemento en uppercase -- namesUpperCase(StudentDataBase.getAllStudents())
+2) Hacer el ejercicio anterior pero con Set
+- 2 tipos de collectors (Cuales otros hay? [Investigar])
+
+Kata [C_StreamFlatMapExample]
+Como se comporta un flatMap y dos ejemplos del tipo de datos con los que se trabaja y cual es una consideración a tomar en cuenta
+Imprimir toda la lista de activities, identificar que es lo que regresa en cada etapa del stream (a partir de .stream())
+
+Dar 3 ejemplos de funciones de la api de streams
+Hacer el ejemplo anterior pero que los valores sean unicos y ordenados
 
 
 
+Kata [D_StreamsComparatorExample]
+Usando sorted...
+De la lista StudentDataBase.getAllStudents().
+- Ordenar por nombre
+- Por GPA
+- Por GPA Higher to lower
+
+Hacerlo con lambdas y por Method Reference
+
+
+Kata [E_StreamsFilterExample]
+Usando filter con getGpa()>=3.9 y gender="female" e imprimir cada uno de los resultados con un forEach (implementación del toString de todos los objetos de la lista)
+
+Kata [F_StreamReduceExample]
+Que tipo de operación es reduce
+Cuantos parametros recibe reduce y cual es el principal objetivo
+Hacer una multiplicación de los siguientes números 1,3,5,7 y explicar funcionamiento
+PENDIENTE SEGUIR VIENDO VIDEO 41 EN MIN 6:41 => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10837904#overview
 
 
 

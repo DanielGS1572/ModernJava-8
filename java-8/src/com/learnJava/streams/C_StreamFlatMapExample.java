@@ -7,20 +7,32 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-public class StreamFlatMapExample {
+public class C_StreamFlatMapExample {
+/*
+Funciona como .map() pero donde cada elemento representa multiples elementos:
+- Stream<List>
+- Stream<Arrays>
+PUEDE SER CUALQUIER TIPO DE COLLECTION QUE REPRESENTA DIFERENTES ELEMENTOS
 
+
+*/
     public static List<String> printStudentActivities() {
-
+//Imprimir toda la lista de activities
         List<String> studentActivities = StudentDataBase.getAllStudents()
-                .stream()
+                .stream()//Stream<Student>
                 .map(Student::getActivities) //Stream<List<String>>
-                .flatMap(List::stream) //<Stream<String>
+                .flatMap(List::stream) //Stream<String> ... ver que esto es como (<List<String>>)lista.stream donde <List<String>> es el paso anterior
                 .collect(toList());
 
         return studentActivities;
 
     }
 
+    /*
+    - distinct
+    - count
+    - sorted
+    */
     public static List<String> printUniqueStudentActivities() {
 
         List<String> studentActivities = StudentDataBase.getAllStudents()

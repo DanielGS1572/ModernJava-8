@@ -4,11 +4,10 @@ import com.learnJava.data.Student;
 import com.learnJava.data.StudentDataBase;
 
 import java.util.List;
-import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
 
-public class StreamsFilterExample {
+public class E_StreamsFilterExample {
 
     public static List<Student> filterStudents(){
 
@@ -23,7 +22,8 @@ public class StreamsFilterExample {
 
     public static void main(String[] args) {
 
-        System.out.println("Filtered Students : " + filterStudents());
+        //System.out.println("Filtered Students : " + filterStudents());
+        filterStudents().forEach(System.out::println);
 
     }
 }

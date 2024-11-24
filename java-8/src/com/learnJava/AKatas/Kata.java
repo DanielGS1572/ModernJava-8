@@ -13,5 +13,16 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Kata {
-    public static void main(String[] args){}
+
+    static Predicate<Student> p1 = s -> s.getGpa() >= 4;
+    static Predicate<Student> p2 = s -> s.getNoteBooks() >= 15;
+
+    public static void main(String[] args){
+        System.out.println(StudentDataBase.getAllStudents().stream().filter(p1.or(p2)).collect(Collectors.toList()));
+        StudentDataBase.getAllStudents().forEach(s ->{
+            if(p1.and(p2).test(s)){
+                System.out.println(s.getName() + ":");
+            }
+        });
+    }
 }

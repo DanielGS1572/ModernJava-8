@@ -13,7 +13,7 @@ public class F_StreamReduceExample {
 /*
 .reduce es una operación terminal, lo que significa que va al final del lambda y cierra el lambda para ya no ser usado después
 
-Toma dos parametros como entrada
+Toma dos parametros como entrada[A]/O puede recibir un solo parametro[B]
 First parameterS - valor default o inicial
 Second parameteR - BinaryOperator<T>
 
@@ -22,17 +22,12 @@ Recordar que binaryOperator es un (T Function<T,T>) recibe dos inputs del mismo 
 Su principal objetivo es reducir todos los elementos del stream en un solo valor
 por ejemplo, sacar la suma, multiplicación o el elemento más grande se una lista
 */
+
+    //[A]
     public static int performMultiplication(List<Integer> integerList){
 
         return integerList.stream()
-                .reduce(1, (a,b) -> a*b);
-
-    }
-
-    public static Optional<Integer> performMultiplicationWithNoInitialValue(List<Integer> integerList){
-
-        return integerList.stream()
-                .reduce( (a,b) -> a*b  /*accumulator.- ira acumulando los calculos*/); // performs multiplication for each element in the stream and returns a new result fo.
+                .reduce(1, (a,b) -> a*b /*accumulator.- ira acumulando los calculos*/);     // performs multiplication for each element in the stream and returns a new result fo.
 
         /*
         [A]
@@ -46,6 +41,17 @@ por ejemplo, sacar la suma, multiplicación o el elemento más grande se una lis
         a=3, b=5 = 15           a es el resultado anterior y b es el siguiente número como parametro
         a=15, b=7 = 105         a es el resultado anterior y b es el siguiente número como parametro
         */
+
+    }
+
+    //[B]
+    public static Optional<Integer> performMultiplicationWithNoInitialValue(List<Integer> integerList){
+
+        return integerList.stream()
+                .reduce( (a,b) -> a*b );    /*Ver que lo que regresa es OPTIONAL*/
+        //VER QUE OPTIONAL TIENE LA OPCION DE VER SI HAY RESULTADO O NO => result.isPresent(), EN LUGAR DE VALIDAR SI ES NULL
+
+
     }
 
     public static String combineStudentNames(){
@@ -68,10 +74,18 @@ por ejemplo, sacar la suma, multiplicación o el elemento más grande se una lis
 
     public static void main(String[] args) {
 
-        List<Integer> integerList = Arrays.asList(1,3,5,7);
+        //***************************************  [A] INICIO *************************************
+        System.out.println("performMultiplication");
+        List<Integer> integerList = Arrays.asList(2,3,5,7);
         //List<Integer> integerList = Arrays.asList();
 
-        System.out.println("Result is : " + performMultiplication(integerList));        //[A]
+        System.out.println("Result is : " + performMultiplication(integerList));
+        System.out.println();
+        //***************************************  [A] FIN *************************************
+
+        //***************************************  [B] INICIO *************************************
+        //para el caso de identity usa el primer valor de la lista
+        System.out.println("performMultiplicationWithNoInitialValue");
         Optional<Integer> result = performMultiplicationWithNoInitialValue(integerList);
 
         if(result.isPresent()){
@@ -80,7 +94,21 @@ por ejemplo, sacar la suma, multiplicación o el elemento más grande se una lis
             System.out.println("Result is : " +0);
         }
 
-        System.out.println(combineStudentNames());
+
+        Optional<Integer> result1 = performMultiplicationWithNoInitialValue(Arrays.asList());
+        System.out.println(result1.isPresent());
+        //si se intenta hacer un get de un optional que no tiene información tirará NoSuchElementException
+        //result1.get()     TODO Excepción!
+        System.out.println();
+        //***************************************  [B] FIN *************************************
+
+        //***************************************  [C] INICIO *************************************
         System.out.println(getHighestGradeStudent().get());
+        //***************************************  [C] FIN *************************************
+
+        //***************************************  [D] INICIO *************************************
+        System.out.println(combineStudentNames());
+        //***************************************  [D] FIN *************************************
+
     }
 }

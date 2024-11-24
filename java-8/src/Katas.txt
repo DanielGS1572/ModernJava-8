@@ -44,7 +44,7 @@ Dos metodos de Consumer y BiConsumer (ver implementaciones del JDK si es necesar
 Kata5 [C_PredicateExample]
 Cual es el signature de un Predicate
 Cual es el metodo que ejecuta un predicate
-Hacer el ejercicio con s.getGpa() >= 4 y s.getNoteBooks() >= 15
+Hacer el ejercicio con s.getGpa() >= 4 ó s.getNoteBooks() >= 15
 Cuales son los metodos default de un Predicate (3 como minimo)... usar cada uno de ellos
 
 
@@ -186,11 +186,15 @@ Hacerlo con lambdas y por Method Reference
 Kata [E_StreamsFilterExample]
 Usando filter con getGpa()>=3.9 y gender="female" e imprimir cada uno de los resultados con un forEach (implementación del toString de todos los objetos de la lista)
 
-Kata [F_StreamReduceExample]
+Kata [F_StreamReduceExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10837904#overview
 Que tipo de operación es reduce
 Cuantos parametros recibe reduce y cual es el principal objetivo
-Hacer una multiplicación de los siguientes números 1,3,5,7 y explicar funcionamiento
-PENDIENTE SEGUIR VIENDO VIDEO 41 EN MIN 6:41 => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10837904#overview
+- [A] Hacer una multiplicación de los siguientes números 1,3,5,7 y explicar funcionamiento [A]
+- [B]
+    - Que es lo que regresa si no tiene un identity value?
+    - Hacer el ejercicio anterior pero sin el primer valor (identity)
+- [C] Hacer un metodo para obtener el Grade mas alto getHighestGradeStudent()
+- [D] Concatenar el nombre de todos los estudiantes
 
 
 

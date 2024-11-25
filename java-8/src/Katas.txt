@@ -52,7 +52,7 @@ Kata6 [D_PredicateStudentExample ignorar -> Function<Integer,Predicate<Integer>>
 Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)  [Imprimir el objeto de la lista con filter y el nombre del estudiante en el forEach]
 Revisar la duda de como funciona Function
 
-Kata [E_PredicateAndConsumerExample]
+Kata7 [E_PredicateAndConsumerExample]
 ----Definir (inicio)----
 Hacer dos Predicates:
 - getGradeLevel()>=3
@@ -62,24 +62,24 @@ Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
 
 Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
 
-Kata [F_BiPredicateExample]
+Kata8 [F_BiPredicateExample]
 Hacer con biPredictate (forEach, como en E_]:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 
-Kata [G_FunctionExample + I_FunctionStudentExample + H_FunctionExample1 (IGNORAR) + D_PredicateStudentExample (Function<Integer,Predicate<Integer>>)]
+Kata9 [G_FunctionExample + I_FunctionStudentExample + H_FunctionExample1 (IGNORAR) + D_PredicateStudentExample (Function<Integer,Predicate<Integer>>)]
 => G_FunctionExample
         Cuales son los dos metodos default (y el metodo abstracto de Function)?
 => I_FunctionStudentExample
         Hacer una lista de estudiantes y regresa un mapa con su nombre y GPA cuyo getGradeLevel()>=3
         Distinción importante del tipo de retorno en Function
 
-Kata [J_BiFunctionExample]
+Kata10 [J_BiFunctionExample]
 Cual es el unico metodo default que tiene BiFunction
 Hacer una lista de estudiantes y regresa un mapa con su nombre y GPA cuyo getGradeLevel()>=3 ... pero que el predicate se le pase como parametro
 
 
-Kata [K_UnaryOperatorExample + L_BinaryOperatorExample]
+Kata11 [K_UnaryOperatorExample + L_BinaryOperatorExample]
 K_UnaryOperatorExample
 De que extiende UnaryOperator?
 Característica de UnaryOperator
@@ -90,7 +90,7 @@ De que extiende BinaryOperator y cual es la caracteristica de los genericos
 Cuales son los metodos estaticos
 
 
-Kata [M_SupplierExample]
+Kata12 [M_SupplierExample]
 Cual es la firma de Supplier
 usar e imprimir en consola, usar tambien SudentDatabase (hacer 2 suppliers)
 new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"))
@@ -99,13 +99,13 @@ new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyb
 Method Reference -> [Section 9] -> https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10654424#overview
 com.learnJava.methodreferences
 ###################################################################
-Kata [A_FunctionMethodReferenceExample]
+Kata13 [A_FunctionMethodReferenceExample]
 - Hace dos Function, uno con lambda y otro con Method Reference que recibe un String y regresa el uppercase
 - Imprimir en consola (usando ambos)
 - Hacer el ejercicio de convertir un lambda a method reference
 
 
-Kata [B_ConsumerMethodReferenceExample]
+Kata14 [B_ConsumerMethodReferenceExample]
 Fuente: https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10667460#overview
 - Hacer un Consumer con Method Reference que imprima los objetos (implementacion del toString) => StudentDataBase.getAllStudents()
 - Hacer dos Consumers que imprima printListOfActivities
@@ -113,7 +113,7 @@ Fuente: https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding
 * Usando method reference
 
 
-Kata [C_RefactorMethodReferenceExample]
+Kata15 [C_RefactorMethodReferenceExample]
 ... al final de esta kata se deben tener 3 sout's
 - Hacer una combinación de Predicate y Supplier en la que se imprima si la condición s.getGradeLevel()>=3 es verdadera o falsa
 Crear el supplier con la siguiente información:
@@ -122,7 +122,7 @@ new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyb
 - Hacer uso de MethodReference del caso anterior
 - Hacer uso de MethodReference pero con BiPredicate
 
-Kata [D_SupplierMethodReferenceExample]
+Kata16 [D_SupplierMethodReferenceExample]
 Que estaría mal al usar Constructor Reference? y cual es el requerimiento para poder usar?
 Mandar llamar el constructor de Student para que mande llamar Hello World
 
@@ -134,7 +134,7 @@ Lambdas and local variables -> [Section 10] ->
 https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10670742#overview
 com.learnJava.lambda
 ###################################################################
-Kata [A_LambdaVariable1 + B_LambdaVariable2]
+Kata17 [A_LambdaVariable1 + B_LambdaVariable2]
 - Dos restricciones de variables
 - Que es effectively final? y porque se hace esto de manejarse como final (2 razones)?
 
@@ -144,7 +144,7 @@ https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/lear
 com.learnJava.streams
 ###################################################################
 
-Kata [A_StreamsExample + A1_CollectionsvsStreams]
+Kata18 [A_StreamsExample + A1_CollectionsvsStreams]
 Usando streams
 CASO1
 De la lista getAllStudents().stream() meter los nombres y la lista de actividades en un Map cuyo getGradeLevel()>=3 y student.getGpa()>=3.9; [No usar if]
@@ -158,13 +158,13 @@ Como depurar un stream y que acepta?
 Cual es la principal idea de usar lo anterior
 
 
-Kata [B_StreamsMapExample]
+Kata19 [B_StreamsMapExample]
 para que se usa map? (No confundir con Map)
 1) Hacer un metodo que regrese un List<String> y que regrese cada elemento en uppercase -- namesUpperCase(StudentDataBase.getAllStudents())
 2) Hacer el ejercicio anterior pero con Set
 - 2 tipos de collectors (Cuales otros hay? [Investigar])
 
-Kata [C_StreamFlatMapExample]
+Kata20 [C_StreamFlatMapExample]
 Como se comporta un flatMap y dos ejemplos del tipo de datos con los que se trabaja y cual es una consideración a tomar en cuenta
 Imprimir toda la lista de activities, identificar que es lo que regresa en cada etapa del stream (a partir de .stream())
 
@@ -173,7 +173,7 @@ Hacer el ejemplo anterior pero que los valores sean unicos y ordenados
 
 
 
-Kata [D_StreamsComparatorExample]
+Kata21 [D_StreamsComparatorExample]
 Usando sorted...
 De la lista StudentDataBase.getAllStudents().
 - Ordenar por nombre
@@ -183,10 +183,10 @@ De la lista StudentDataBase.getAllStudents().
 Hacerlo con lambdas y por Method Reference
 
 
-Kata [E_StreamsFilterExample]
+Kata22 [E_StreamsFilterExample]
 Usando filter con getGpa()>=3.9 y gender="female" e imprimir cada uno de los resultados con un forEach (implementación del toString de todos los objetos de la lista)
 
-Kata [F_StreamReduceExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10837904#overview
+Kata23 [F_StreamReduceExample] => https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10837904#overview
 Que tipo de operación es reduce
 Cuantos parametros recibe reduce y cual es el principal objetivo
 - [A] Hacer una multiplicación de los siguientes números 1,3,5,7 y explicar funcionamiento [A]
@@ -196,6 +196,10 @@ Cuantos parametros recibe reduce y cual es el principal objetivo
 - [C] Hacer un metodo para obtener el Grade mas alto getHighestGradeStudent()
 - [D] Concatenar el nombre de todos los estudiantes
 
+
+Kata24 [G_StreamsFilterMapReduceExample]
+Obtener el total de notebooks de la colección
+Hacer lo anterior pero filtrando por genero
 
 
 11/14 [Udemy]

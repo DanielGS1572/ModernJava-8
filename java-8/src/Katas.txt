@@ -202,6 +202,21 @@ Obtener el total de notebooks de la colección
 Hacer lo anterior pero filtrando por genero
 
 
+Kata25 [H_StreamsMaxMinExample] => Fuente: https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10909222?start=15#overview
+Hacer un metodo que regresa el valor maximo de una lista regresando un int y un Optional
+- que pasaría si en lugar de optional regresa un int
+Hacer el punto anterior pero con un reduce
+
+Hacer lo mismo pero con el minimo
+
+
+Kata26 [I_StreamsLimitSkipExample]
+Que ayudan a crear limit y skip? como se comportan y crear 2 metodos para usarlos
+
+Kata27
+Que recibe anyMatch, allMatch, nonMatch
+
+
 11/14 [Udemy]
 9:05 - 9:25
 2:19 - 2:42

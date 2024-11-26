@@ -2,11 +2,11 @@ package com.learnJava.streams;
 
 import com.learnJava.data.StudentDataBase;
 
-public class StreamsMatchExample {
+public class J_StreamsMatchExample {
 
+// Recibe un predicate y regresa un boolean
 
     public static boolean allMatch(){
-
         boolean result = StudentDataBase.getAllStudents().stream()
                 .allMatch(student -> student.getGpa()>=3.9);
 

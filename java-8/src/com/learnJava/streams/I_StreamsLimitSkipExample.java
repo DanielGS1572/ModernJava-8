@@ -4,7 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class StreamsLimitSkipExample {
+public class I_StreamsLimitSkipExample {
+
+    //Las dos funciones de Limit y skip ayudan a crear sub-streams
+    //limit del primer valor al limite definido
+    //skip brinca los primeros valores hasta completar el stream
 
     public static Optional<Integer> limit(List<Integer> integers){
         return  integers.stream()

@@ -53,14 +53,11 @@ Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta l
 Revisar la duda de como funciona Function
 
 Kata7 [E_PredicateAndConsumerExample]
-----Definir (inicio)----
 Hacer dos Predicates:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
-----Definir (fin)----
-
-Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
+=> Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
 
 Kata8 [F_BiPredicateExample]
 Hacer con biPredictate (forEach, como en E_]:
@@ -217,7 +214,7 @@ Kata27
 Que recibe anyMatch, allMatch, nonMatch
 
 
-11/14 [Udemy]
+11/14 [Udemy]f
 9:05 - 9:25
 2:19 - 2:42
 3:36 - 3:48

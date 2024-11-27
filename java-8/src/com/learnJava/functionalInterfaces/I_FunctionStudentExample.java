@@ -23,8 +23,7 @@ public class I_FunctionStudentExample {
 
         return studentGradeMap;
 //todo IMPORTANTE
-        //ver que el return type de funciton es Function<List<Student>, Map<String, Double>>
-        // y no solo el Map<String, Double>
+        //ver que el return type de funciton es Map<String, Double>
 
     });
 

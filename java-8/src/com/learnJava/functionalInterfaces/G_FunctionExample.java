@@ -7,7 +7,7 @@ public class G_FunctionExample {
 
     static Function<String,String> upperCase =  (name) -> name.toUpperCase();
 
-    static Function<String,String> addSomeString =  (name) -> name/*.toUpperCase()*/.concat("default");
+    static Function<String,String> addSomeString =  (name) -> name.concat("default");
 
     static Function<String,Integer> strLength =  (name) -> name.length();
 
@@ -24,7 +24,7 @@ public class G_FunctionExample {
         //Compose method primero ejecutara lo que se encuentra dentro de compose() [addSomeString]
         System.out.println("Result of compose : " + upperCase.compose(addSomeString).apply("java8"));
 
-        Function<String,String> abc = Function.identity();
+        Function<String,String> abc = Function.identity();      //Para que sirve el identity si regresa el mismo valor?
 
         System.out.println(abc.apply("ABC"));
 

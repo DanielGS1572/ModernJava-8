@@ -41,15 +41,16 @@ Dos metodos de Consumer y BiConsumer (ver implementaciones del JDK si es necesar
 
 
 
-Kata5 [C_PredicateExample]
+Kata5 [C_PredicateExample] (se repite con la kata 7)
 Cual es el signature de un Predicate
 Cual es el metodo que ejecuta un predicate
-Hacer el ejercicio con s.getGpa() >= 4 ó s.getNoteBooks() >= 15
+Hacer el ejercicio con s.getGpa() >= 4 ó s.getNoteBooks() >= 15  ... Hacer un Biconsumer que imprima el nombre y las actividades de estudiantes
 Cuales son los metodos default de un Predicate (3 como minimo)... usar cada uno de ellos
 
 
 Kata6 [D_PredicateStudentExample ignorar -> Function<Integer,Predicate<Integer>>]
 Hacer un mismo filtrado usando .forEach() y .filter() con un predicate de esta lista StudentDataBase.getAllStudents() que la condición sea que gpa >= 3.9 (Imprimir solo la versión toString)  [Imprimir el objeto de la lista con filter y el nombre del estudiante en el forEach]
+Con filter traer todos los registors sin biConsumer, simplemente la lista filtrada
 Revisar la duda de como funciona Function
 
 Kata7 [E_PredicateAndConsumerExample]
@@ -60,7 +61,7 @@ Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
 => Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
 
 Kata8 [F_BiPredicateExample]
-Hacer con biPredictate (forEach, como en E_]:
+Hacer con biPredictate y consumer ... solo que en el consumer tenga el biPredicate(forEach, como en E_]:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 
@@ -213,20 +214,7 @@ Que ayudan a crear limit y skip? como se comportan y crear 2 metodos para usarlo
 Kata27
 Que recibe anyMatch, allMatch, nonMatch
 
-
-11/14 [Udemy]f
-9:05 - 9:25
-2:19 - 2:42
-3:36 - 3:48
-5:09 - 5:34
-
-11/15 [Katas]
-Kata4
-Kata5
-Kata6
-9:07 - 9:28
-11:13 - 11:40
-9:10 - 9:22
+Video 48 sin ver - findAny, findFirst
 
 
 11/19 [Katas]

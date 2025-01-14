@@ -11,24 +11,21 @@ import java.util.stream.IntStream;
 public class Kata {
     /*
     Consumer
-    supplier
-    function
-    predicate
+    Function
+    Supplier
+    Predicate.- Recibe un objeto y regresa un booleano
     */
-    static Predicate <Student> p1 = student -> student.getGradeLevel()>=3;
-    static Function<List<Student>, Map<String, Double>> f1 = list -> {
 
-        Map<String, Double> map = new HashMap<>();
+    static Function<List<Student>,Map<String,Integer>> f1 = students -> {
+        Map<String,Integer> mapStudent=new HashMap<>();
+      students.forEach(student -> {
+          mapStudent.put(student.getName(), student.getGradeLevel());
+      });
+        return mapStudent;
 
-        list.forEach(s -> {
-            if (p1.test(s)) {
-                map.put(s.getName(), s.getGpa());
-            }
-        });
-        return map;
     };
-
     public static void main(String[] args) {
         System.out.println(f1.apply(StudentDataBase.getAllStudents()));
     }
+
 }

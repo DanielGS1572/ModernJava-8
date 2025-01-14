@@ -58,7 +58,7 @@ Hacer dos Predicates:
 - getGradeLevel()>=3
 - s.getGpa()>=3.9
 Hacer un biConsumer para que pueda imprimir --> name + " : " + activities
-=> Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
+=> [Usando el BiConsumer anterior] Hacer un consumer con los dos predicates y si se cumple la condición hacer uso del biConsumer, crear metodo para desplegar la información
 
 Kata8 [F_BiPredicateExample]
 Hacer con biPredictate y consumer ... solo que en el consumer tenga el biPredicate(forEach, como en E_]:
